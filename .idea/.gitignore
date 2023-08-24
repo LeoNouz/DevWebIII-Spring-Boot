@@ -1,0 +1,24 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+
+target/
+.idea/
+logs/
+*.log
+*.swp
+.env
+application.propreties
+application.yml
+*.jar
+*.war
+
+lib/
+.DS_Store
+Thumbs.db
+
