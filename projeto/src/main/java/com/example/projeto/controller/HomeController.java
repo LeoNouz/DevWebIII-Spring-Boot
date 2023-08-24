@@ -10,12 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/")
 public class HomeController {
 
-    @GetMapping("/{nome}")
-    public String index(@PathVariable(required = false) String nome, ModelMap model) {
-        if (nome == null) {
-            nome = "Visitante";
-        }
-        model.addAttribute("nome", nome);
+    @GetMapping("/")
+    public String index() {
 
         return "index";
     }
