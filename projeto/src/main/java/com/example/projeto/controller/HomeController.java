@@ -12,19 +12,6 @@ public class HomeController {
 
     @GetMapping("/")
     public String index() {
-
         return "index";
-    }
-
-    @GetMapping("/calculadora")
-    public String calculadora() {
-        return "calculadora/index";
-    }
-
-    @PostMapping("/calcular")
-    public String calcular(Model model, double quantity1, double quantity2) {
-        double resultado = quantity1 + quantity2;
-        model.addAttribute("resultado", resultado);
-        return "calculadora/calcular";
     }
 }

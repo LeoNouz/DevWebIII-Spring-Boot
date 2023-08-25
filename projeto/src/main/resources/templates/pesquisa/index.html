@@ -85,58 +85,37 @@
 </main>
 
 <body>
-<div class="px-4 py-5 my-5 text-center">
-  <!--<a href="https://br.freepik.com/vetores-gratis/laptop-com-icone-de-codigo-isometrico-de-programa-desenvolvimento-de-software-e-aplicacoes-de-programacao-neon-escuro_4102879.htm#query=programacao&position=0&from_view=keyword&track=sph">Imagem de fullvector</a> no Freepik-->
-  <img class="d-block mx-auto mb-4" src="/img/laptop_banner.jpg" alt="" width="272" height="157">
-  <h1 class="display-5 fw-bold">Bem-vindo, Visitante</h1>
-  <div class="col-lg-6 mx-auto">
-    <p class="lead mb-4">Meu nome é Leonardo Nouzinho e sou aluno da Fatec Zona Sul no curso Desenvolvimento de Software Multiplataforma, esse site foi desenvolvido para a disciplina de Desenvolvimento Web III.
-      Utilizei Bootstrap para criar uma interface agradável para o usuário com o intuito de melhorar a usabilidade.
-    </p>
-  </div>
+<section class="py-5 text-center container">
+  <div class="row py-lg-5">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="fw-light">Pesquisar capitais</h1>
+      <p class="lead text-muted">Digite o nome de dois países para ver as suas capitais.</p>
 
-  <div class="container px-4 py-5" id="hanging-icons">
-    <h2 class="pb-2 border-bottom">Instruções de Funcionamento</h2>
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-      <div class="col d-flex align-items-start">
-        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+      <form action="/pesquisar" method="POST">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label for="country1" class="form-label">País 1:</label>
+                <input type="text" id="country1" name="country1" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label for="country2" class="form-label">País 2:</label>
+                <input type="text" id="country2" name="country2" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="form-control btn btn-dark submit px-3">Pesquisar</button>
+            </div>
+          </div>
         </div>
-        <div>
-          <h3 class="fs-2">Entrar</h3>
-          <p>Entre em uma conta fictícia digitando seu 'Username' e 'Senha'. Após confirmar o login, o usuário será redirecionado para a página principal com saudação personalizada.</p>
-          <a href="/login" class="btn btn-primary" style="background-color: #FBCEB5; color: black; border-color: #FBCEB5;">
-            Prosseguir
-          </a>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#calculator-fill"/></svg>
-        </div>
-        <div>
-          <h3 class="fs-2">Calculadora</h3>
-          <p>O usuário pode realizar uma operação básica de soma digitando dois números reais. Aperte o botão de calcular e espere a página processar as duas variáveis depois é só visualizar o resultado na tela.</p>
-          <a href="/calculadora" class="btn btn-primary" style="background-color: #FBCEB5; color: black; border-color: #FBCEB5;">
-            Prosseguir
-          </a>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#search"/></svg>
-        </div>
-        <div>
-          <h3 class="fs-2">Pesquisar</h3>
-          <p>O usuário poderá pesquisar a capital de um estado do Brasil e de um país, para isso, digite o nome do estado do Brasil e de um país famoso, o sistema irá imprimir o resultado.</p>
-          <a href="/pesquisa" class="btn btn-primary" style="background-color: #FBCEB5; color: black; border-color: #FBCEB5;">
-            Prosseguir
-          </a>
-        </div>
-      </div>
+      </form>
+
     </div>
   </div>
-</div>
+</section>
 </body>
 
 <footer>
