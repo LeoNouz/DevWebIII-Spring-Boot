@@ -11,13 +11,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class LoginController {
     @GetMapping("/login")
     public String index() {
-
         return "login/index";
     }
 
     @PostMapping("/logar")
     public String logar(Model model, String username, String password, String checked) {
-
         model.addAttribute("username", username);
         model.addAttribute("password", password);
         return "login/logar";
